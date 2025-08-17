@@ -1,9 +1,11 @@
+
 let count =  0;
+
 
 function increaseCount() {
     count++;
-    displayCount(); // calling second funtion in first function
-    checkCountValue(); // calling third funtion in first function
+    displayCount(); // calling second function in first function
+    checkCountValue(); // calling third function in first function
 }
 
 
@@ -19,4 +21,11 @@ function checkCountValue() {
     } else if (count > 20) {
         alert("You got popular!");
     }
+}
+
+
+function reset() {
+    count = 0;
+    displayCount();
+    alert("Followers count has been reset.");
 }
