@@ -51,3 +51,23 @@ let isAuthenticated = true;
 let authenticationStatus = isAuthenticated ? "Authenticated" : "Not Authenticated";
 
 console.log ("Is Authentivated? ", isAuthenticated);
+console.log ("----------------------------");
+
+let personRole = "Enrolled Member"; // Change this to test: "Employee", "Subscriber", "Non-Subscriber"
+
+let message;
+
+if (personRole === "Employee") {
+    message = "You are authorized to have access to Dietary Services.";
+} else if (personRole === "Enrolled Member") {
+    message = "You are authorized to have access to Dietary Services and one-on-one interaction with a dietician.";
+} else if (personRole === "Subscriber") {
+    message = "You are authorized to have partial access to Dietary Services only.";
+} else if (personRole === "Non-Subscriber") {
+    message = "You need to enroll or at least subscribe first to avail this facility.";
+} else {
+    message = "Role not recognized.";
+}
+
+console.log("Person role: ", message);
+console.log ("----------------------------");
